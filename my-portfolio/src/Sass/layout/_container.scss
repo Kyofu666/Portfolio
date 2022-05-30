@@ -2,10 +2,11 @@
 
 .container {
   width: u.$container-width-lg;
+  margin: 0 auto;
 }
 
 section {
-  margin-top: rem(128px);
+  margin-top: rem(128);
 }
 
 section > h2,
