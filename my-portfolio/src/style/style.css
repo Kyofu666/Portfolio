@@ -1,15 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 html {
   box-sizing: border-box;
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+::-webkit-scollbar {
+  display: none;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  line-height: 1.4;
+  background-image: url("../assets/bg-texture.png");
+}
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: Urgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: Urgba(255, 255, 255, 0.6);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.container {
+  width: 75%;
+}
+
+section {
+  margin-top: rem(128px);
+}
+
+section > h2,
+section h5 {
+  text-align: center;
+  color: var(--color-light);
+}
+
+section > h2 {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+a {
+  color: var(--color-primary);
+  transition: all 400ms ease;
+}
+a:hover {
+  color: var(--color-white);
+}
+
+.btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.4375rem;
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 56.25em) {
+  .container {
+    width: 86%;
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 43.75em) {
+  .container {
+    width: 90%;
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
