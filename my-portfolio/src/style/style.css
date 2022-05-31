@@ -55,6 +55,7 @@ h1 {
 
 section {
   margin-top: rem(128);
+  height: 100vh;
 }
 
 section > h2,
@@ -118,7 +119,7 @@ img {
     margin-top: 6rem;
   }
 }
-@media (max-width: 43.75em) {
+@media (max-width: 37.5em) {
   .container {
     width: 90%;
   }
@@ -163,7 +164,7 @@ img {
   width: 20.625rem;
   height: 32rem;
   position: absolute;
-  left: calc(50% - 11rem);
+  left: calc(50% - 10.3125rem);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
@@ -182,4 +183,51 @@ img {
   font-weight: 300;
   font-size: 0.9375rem;
   transform: rotate(90deg);
+}
+@media (max-width: 37.5em) {
+  .header .header {
+    height: 100vh;
+  }
+  .header__socials, .header__scrollDown {
+    display: none;
+  }
+}
+@media (max-width: 56.25em) {
+  .header .header {
+    height: 68vh;
+  }
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8125rem;
+  border-radius: 3rem;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+nav a {
+  background: transparent;
+  color: var(--color-light);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.125rem;
+}
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+nav a.active {
+  background-color: var(--color-bg);
+  color: var(--color-white);
 }/*# sourceMappingURL=style.css.map */

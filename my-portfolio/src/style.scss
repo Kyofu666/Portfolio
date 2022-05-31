@@ -1,10 +1,10 @@
 @forward "./Sass/globals/";
 @forward "./Sass/layout/";
+@forward "./components/header/header";
+@forward "./components/nav/nav";
 @forward "./components/about/about";
 @forward "./components/contact/contact";
 @forward "./components/experience/experience";
 @forward "./components/footer/footer";
-@forward "./components/header/header";
-@forward "./components/nav/nav";
 @forward "./components/portfolio/portfolio";
 @forward "./components/services/services";

@@ -39,7 +39,7 @@
     width: u.rem(330);
     height: u.rem(512);
     position: absolute;
-    left: calc(50% - u.rem(176));
+    left: calc(50% - u.rem(165));
     margin-top: u.rem(64);
     border-radius: u.rem(192) u.rem(192) 0 0;
     overflow: hidden;
@@ -61,4 +61,23 @@
     font-size: u.rem(15);
     transform: rotate(90deg);
   }
+
+  @include u.breakpoints(medium) {
+    .header {
+      height: 100vh;
+    }
+
+    &__socials,
+    &__scrollDown {
+      display: none;
+    }
+  }
+
+  @include u.breakpoints(large) {
+    .header {
+      height: 68vh;
+    }
+  }
 }
+
+// Mobile
