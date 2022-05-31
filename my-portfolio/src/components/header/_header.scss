@@ -62,8 +62,14 @@
     transform: rotate(90deg);
   }
 
+  @include u.breakpoints(large) {
+    & {
+      height: 68vh;
+    }
+  }
+
   @include u.breakpoints(medium) {
-    .header {
+    & {
       height: 100vh;
     }
 
@@ -72,12 +78,4 @@
       display: none;
     }
   }
-
-  @include u.breakpoints(large) {
-    .header {
-      height: 68vh;
-    }
-  }
 }
-
-// Mobile
