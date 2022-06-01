@@ -3,6 +3,7 @@
 .portfolio__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   grid-gap: 2.5rem;
 
   @include u.breakpoints(large) {
