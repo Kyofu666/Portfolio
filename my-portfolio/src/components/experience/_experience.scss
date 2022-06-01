@@ -1,0 +1,77 @@
+@use "../../Sass/utils/" as u;
+
+.experience {
+  &__container {
+    width: max-content;
+
+    @include u.breakpoints(medium) {
+      & {
+        width: initial;
+        display: grid;
+      }
+    }
+
+    & > div {
+      background-color: var(--color-bg-variant);
+      padding: 2.4rem 3.5rem;
+      border-radius: 2rem;
+      border: 1px solid transparent;
+      transition: u.$transition;
+
+      &:hover {
+        background-color: transparent;
+        border-color: var(--color-primary-variant);
+      }
+
+      & h3 {
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+        color: var(--color-primary);
+      }
+
+      @include u.breakpoints(large) {
+        & {
+          width: 80%;
+          padding: 2rem;
+          margin: 0 auto;
+        }
+      }
+      @include u.breakpoints(medium) {
+        & {
+          width: 100%;
+        }
+      }
+    }
+
+    &__frontent__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 2rem;
+
+      &__details {
+        display: flex;
+        gap: 1rem;
+
+        & .icon {
+          margin-top: u.rem(6);
+          color: var(--color-primary);
+        }
+        @include u.breakpoints(medium) {
+          & {
+            display: block;
+          }
+        }
+      }
+
+      @include u.breakpoints(medium) {
+        & {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}

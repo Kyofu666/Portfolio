@@ -55,7 +55,6 @@ h1 {
 
 section {
   margin-top: 8rem;
-  height: 100vh;
 }
 
 section > h2,
@@ -326,5 +325,72 @@ nav a.active {
 @media (max-width: 37.5em) {
   .about__content p {
     margin: 1.5rem 0;
+  }
+}
+
+.experience__container {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media (max-width: 37.5em) {
+  .experience__container {
+    width: initial;
+    display: grid;
+  }
+}
+.experience__container > div {
+  background-color: var(--color-bg-variant);
+  padding: 2.4rem 3.5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: all 400ms ease;
+}
+.experience__container > div:hover {
+  background-color: transparent;
+  border-color: var(--color-primary-variant);
+}
+.experience__container > div h3 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+@media (max-width: 56.25em) {
+  .experience__container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 37.5em) {
+  .experience__container > div {
+    width: 100%;
+  }
+}
+.experience__container__frontent__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.experience__container__frontent__content__details {
+  display: flex;
+  gap: 1rem;
+}
+.experience__container__frontent__content__details .icon {
+  margin-top: 0.375rem;
+  color: var(--color-primary);
+}
+@media (max-width: 37.5em) {
+  .experience__container__frontent__content__details {
+    display: block;
+  }
+}
+@media (max-width: 37.5em) {
+  .experience__container__frontent__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */
