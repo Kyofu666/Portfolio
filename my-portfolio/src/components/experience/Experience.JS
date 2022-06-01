@@ -63,7 +63,10 @@ function Experience() {
             <article className="experience__container__frontent__content__details">
               <BsFillPatchCheckFill className="icon" />
               <div>
-                <h4>RESPONSIVE DESIGN</h4>
+                <h4>
+                  RESPONSIVE <br />
+                  DESIGN
+                </h4>
                 <small className="text-light">Intermidiate</small>
               </div>
             </article>
@@ -79,7 +82,7 @@ function Experience() {
             <article className="experience__container__frontent__content__details">
               <BsFillPatchCheckFill className="icon" />
               <div>
-                <h4>VISUAL STUDIO </h4>
+                <h4>VISUAL STUDIO</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
